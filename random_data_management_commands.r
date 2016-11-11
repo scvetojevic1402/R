@@ -15,4 +15,4 @@ for (i in 1:ncol(df)){
 View(naCols)
 
 #count of NA values in each column of a df
-sapply(df,function(x) length(which(is.na(x))))
+lapply(df,function(x) length(which(is.na(x))))
