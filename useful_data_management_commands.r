@@ -16,3 +16,6 @@ View(naCols)
 
 #count of NA values in each column of a df
 lapply(df,function(x) length(which(is.na(x))))
+
+#equivalent to SQL group by
+aggregate(hashtags$retweets, by=list(hashtags$hashtag), FUN=mean)
